@@ -13,22 +13,17 @@ Analizador de logs de autenticación en Linux. Trabaja principalmente con /var/l
 bash
 chmod +x ./ipLog.sh
 
-# 0 argumentos:
-# Muestra las últimas 100 líneas de /var/log/auth.log
+## 0 argumentos: Muestra las últimas 100 líneas de /var/log/auth.log
 ./ipLog.sh
 
-# 1 argumento (IP):
-# Busca la IP en /var/log/auth.log
+## 1 argumento (IP): Busca la IP en /var/log/auth.log
 ./ipLog.sh 192.168.1.10
 
-# 1 argumento (directorio):
-# Obtiene la última IP que aparece en /var/log/auth.log
-# y la busca en todos los *.log y *.log.gz de ese directorio (recursivamente)
+## 1 argumento (directorio): Obtiene la última IP que aparece en /var/log/auth.log y la busca en todos los *.log y *.log.gz de ese directorio (recursivamente)
 ./ipLog.sh /var/log/
 
-# 2 argumentos (directorio, IP):
-# Busca la IP en todos los *.log y *.log.gz del directorio (recursivamente)
+## 2 argumentos (directorio, IP): Busca la IP en todos los *.log y *.log.gz del directorio (recursivamente)
 ./ipLog.sh /var/log/ 192.168.1.10
 
-# Mostrar ayuda integrada
+## Mostrar ayuda integrada
 ./ipLog.sh --help
